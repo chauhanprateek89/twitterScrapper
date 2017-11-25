@@ -12,9 +12,9 @@ app = Flask(__name__)
 
 def get_csv():
     csv_path = './static/la-riots-deaths.csv'
-    csv_file = open(csv_path,'rb')
-    csv_obj = csv.reader(csv_file)
-    csv_list = list(csv_obj)
+    with open(csv_path, 'r') as f:
+        reader = csv.reader(f)
+        csv_list = list(reader)
     return csv_list
 
 @app.route("/")
