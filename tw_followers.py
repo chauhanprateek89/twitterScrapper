@@ -8,16 +8,16 @@ Created on Tue Nov 21 15:05:52 2017
 import tweepy
 import time
 
-consumer_key = '2a90RGBrOO2Ql5DUvK80weoux'
-consumer_secret='4Oa5ztAFNKNGPHYS3MgyK7cfW2ZDfYOH8pS1dUkSG80W4wNute'
-access_token='745154744-tSnfUVUszUVUhnt9zGVMXwz6oSJgKeiQZYONyUJ4'
-access_secret='hWuPMLegeriF6fououxojQBdo7hNOoaiQnCfrhVE6Z3MH'
-twitter_handle='Tryilo_Umbrella'
+consumer_key = 'xxxx'
+consumer_secret='xxxx'
+access_token='xxxx'
+access_secret='xxxx'
+twitter_handle='twitter handle'
 
 auth = tweepy.OAuthHandler(consumer_key,consumer_secret)
 auth.set_access_token(access_token,access_secret)
 api = tweepy.API(auth)
-list = open('twitter_followers_3.txt','w',encoding='utf-8')
+list = open('twitter_followers.txt','w',encoding='utf-8')
 
 api = tweepy.API(auth)
 
